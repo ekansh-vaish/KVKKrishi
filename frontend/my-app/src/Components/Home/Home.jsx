@@ -20,7 +20,7 @@ setShowModal(true);
 async function ProductList() {
 try {
 
-const response = await axios.get("https://kvk-frontend.onrender.com/product/getproduct",
+const response = await axios.get("https://krishivikaskendra2.onrender.com/product/getproduct",
 {
 withCredentials : true,   
 headers: {

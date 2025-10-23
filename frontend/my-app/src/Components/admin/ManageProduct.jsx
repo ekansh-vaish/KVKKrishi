@@ -37,7 +37,7 @@ data.append('file',image);
 // const token = localStorage.getItem("token");
 
 try {
- await axios.post("https://kvk-frontend.onrender.com/product/product",data,{ 
+ await axios.post("https://krishivikaskendra2.onrender.com/product/product",data,{ 
 headers :  {'Content-Type': 'multipart/form-data' },
 withCredentials: true
 });

@@ -21,7 +21,7 @@ async function Report(e)
 {
 e.preventDefault();
 try{
- await axios.post("https://kvk-frontend.onrender.com/query/queries",contact,
+ await axios.post("https://krishivikaskendra2.onrender.com/query/queries",contact,
 {withCredentials: true}
 )
 

@@ -20,7 +20,7 @@ const FormClose = () => setAddProduct(false);
 const FormeShow = () => setAddProduct(true);
 
 async function ProductList() {
-const response = await axios.get("https://kvk-frontend.onrender.com/product/getproduct", {
+const response = await axios.get("https://krishivikaskendra2.onrender.com/product/getproduct", {
 withCredentials: true,
 headers: {
 "Content-Type": "application/json"
@@ -31,7 +31,7 @@ setProductData(response.data.data);
 
 async function DeleteProduct(id) {
 try {
-await axios.delete(`https://kvk-frontend.onrender.com/product/delete/${id}`, {
+await axios.delete(`https://krishivikaskendra2.onrender.com/product/delete/${id}`, {
 withCredentials: true
 });
 ProductList();

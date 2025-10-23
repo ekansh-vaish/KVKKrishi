@@ -15,7 +15,7 @@ setRole(storedRole);
 
 async function handleLogout() {
 try {
-await axios.post("https://kvk-frontend.onrender.com/logout", {}, {
+await axios.post("https://krishivikaskendra2.onrender.com/logout", {}, {
 withCredentials: true
 });
 localStorage.removeItem("role");
