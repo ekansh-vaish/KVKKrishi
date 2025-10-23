@@ -1,0 +1,133 @@
+/* Slider Container */
+.slider {
+  position: relative;
+  /* top: -65px; */
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+/* Individual Slide */
+.slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  opacity: 0;
+  pointer-events: none;
+  animation: slideAnim 16s infinite;
+}
+
+/* Slide Backgrounds */
+.slide:nth-child(1) {
+background-image: url("https://t4.ftcdn.net/jpg/01/23/70/89/360_F_123708977_X8lHoZ3iSb6rRjsmFb2mxGNp2dngJrjh.jpg");
+  animation-delay: 0s;
+}
+.slide:nth-child(2) {
+  background-image: url('https://media.istockphoto.com/id/922593814/photo/agronomist-consulting-with-farmer-outdoor-in-the-field.jpg?s=612x612&w=0&k=20&c=WHG4pVAkcrQeg8rqRQXRSV-TT7WRZtjnhJpKoPbgKQg=');
+  animation-delay: 4s;
+}
+.slide:nth-child(3) {
+background-image: url("https://img.freepik.com/premium-photo/young-indian-agronomist-giving-liquid-fertilizer-bottle-farmer-showing-product-information-laptop-green-agriculture-field_54391-5827.jpg");
+  animation-delay: 8s;
+}
+.slide:nth-child(4) {
+  background-image: url('https://i0.wp.com/csep.org/wp-content/uploads/2025/10/iStock-1161412310-banner-image-2.jpg?resize=1000%2C540&ssl=1');
+  animation-delay: 12s;
+}
+
+/* Slide Animation */
+@keyframes slideAnim {
+  0% { opacity: 0; pointer-events: none; }
+  5% { opacity: 1; pointer-events: auto; }
+  25% { opacity: 1; pointer-events: auto; }
+  30% { opacity: 0; pointer-events: none; }
+  100% { opacity: 0; pointer-events: none; }
+}
+
+/* Slide Content */
+.slide-content {
+  position: absolute;
+  bottom: 50px;
+  left: 60px;
+  z-index: 2;
+  color: rgb(0, 0, 0);
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateX(-50px) translateY(-100px);
+  animation: textFade 16s infinite;
+}
+
+/* Text Animation */
+@keyframes textFade {
+  0% { opacity: 0; transform: translateX(-30px); }
+  5% { opacity: 1; transform: translateX(0); }
+  25% { opacity: 1; transform: translateY(0); }
+  30% { opacity: 0; transform: translateY(-100px); }
+  100% { opacity: 0; transform: translateX(-30px); }
+}
+
+/* Individual Slide Content Delay */
+.slide:nth-child(1) .slide-content { animation-delay: 0s; }
+.slide:nth-child(2) .slide-content { animation-delay: 4s; }
+.slide:nth-child(3) .slide-content { animation-delay: 8s; }
+.slide:nth-child(4) .slide-content { animation-delay: 12s; }
+
+/* Headings */
+.slide-content h2 {
+  font-size: 50px;
+  color: #16141a;
+  margin-bottom: 15px;
+}
+
+/* Paragraphs */
+.slide-content p {
+  font-size: 22px;
+  font-weight: bolder;
+  color: rgb(195, 87, 34);
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.slide-content button {
+  padding: 12px 25px;
+  background-color: #17ADBE;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slide-content button:hover {
+  background-color: purple;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .slide-content {
+    bottom: 100px;
+    left: 20px;
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .slide-content h2 {
+    font-size: 24px;
+  }
+
+  .slide-content p {
+    font-size: 16px;
+  }
+
+  .slide-content button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}

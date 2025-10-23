@@ -1,0 +1,96 @@
+
+*
+{
+margin: 0;
+padding: 0;
+}
+#image-bg{
+background-image: url(https://static.vecteezy.com/system/resources/thumbnails/056/366/035/small_2x/tractors-plowing-a-lush-green-field-at-sunset-with-mountains-in-the-background-creating-a-serene-landscape-photo.jpg);
+background-repeat: no-repeat;
+background-size:cover;    
+}
+#impact :hover
+{
+background-color: rgb(172, 165, 36);    
+}
+/* }
+.impact ul
+{
+display: flex;
+flex-direction: row;   
+list-style: none;
+gap: 20px; 
+text-align: center;
+
+}
+
+.impact ul li{
+color: rgb(38, 38, 91);    
+margin-top: 20px;
+margin-left: 10px;
+}
+  */
+
+.connection
+{
+background-color: rgba(136, 233, 58, 0.69);    
+margin-top: 30px;
+margin-bottom: 30px;
+}
+.connection h3{
+text-align: center;    
+padding-top: 20px;
+text-decoration: green underline;
+
+}
+
+.connection .para
+{
+background-color: rgb(161, 205, 220);
+text-align: center;    
+margin: 20px;    
+}
+
+.connection ul{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 20px;    
+text-align: center;
+}
+.connection ul li{
+list-style: none; 
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.company 
+{
+background-color: rgb(223, 240, 189);
+}
+
+.company  h4
+{
+color:brown;
+    padding-top: 20px;
+text-decoration: 3px red underline;
+text-align: center;
+}
+
+.company p
+{
+margin: 20px;
+background-color: rgb(204, 186, 162);
+}
+
+.company ul {
+display: flex;    
+flex-wrap: wrap;
+gap: 10px;    
+text-align: center;
+}
+
+.company ul li{
+margin: 20px;
+margin-bottom: 50px;    
+}
