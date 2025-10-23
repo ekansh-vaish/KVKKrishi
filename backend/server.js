@@ -25,7 +25,7 @@ console.log(err);
 
 app.use(cors(
 {
-origin: 'https://kvk-krishi-kv3v.vercel.app', // allow your frontend
+origin: 'krishi-vikas-kendra-t2is.vercel.app', // allow your frontend krishi-vikas-kendra-t2is.vercel.app 
   methods: ['GET', 'POST', 'PUT', 'DELETE'],// ✅ must match your frontend origin
 credentials: true        
 }
