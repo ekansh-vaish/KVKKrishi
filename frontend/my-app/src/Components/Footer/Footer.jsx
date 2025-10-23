@@ -21,6 +21,7 @@ function Footer() {
 <li><a href="/contactus" className="footer-link">Contact Us</a></li>
 <li><a href="/aboutus" className="footer-link">About Us</a></li>
 <li><a href="/network" className="footer-link">Network</a></li>
+<li><a href="/login" className="footer-link">Login</a></li>
 
 </ul>
 </div>
