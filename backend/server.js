@@ -25,7 +25,8 @@ console.log(err);
 
 app.use(cors(
 {
-origin: ["http://localhost:5173","krishi-vikas-kendra-t2is.vercel.app" ] ,// ✅ must match your frontend origin
+origin: 'https://kvk-krishi-kv3v.vercel.app', // allow your frontend
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],// ✅ must match your frontend origin
 credentials: true        
 }
 ));
